@@ -30,7 +30,7 @@ void loop()
     // wait 15 ms for servo to reach the position
     delay(15); // Wait for 15 millisecond(s)
   }
-  for (pos = 180; pos >= 360; pos -= 1) {
+  for (pos = 360; pos >= 0; pos -= 1) {
     // tell servo to go to position in variable 'pos'
     servo_9.write(pos);
     // wait 15 ms for servo to reach the position
